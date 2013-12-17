@@ -114,4 +114,6 @@ ochem.addReaction(alcohol, alkeen, E, 87, 'E1cb-eliminatie', '', '');
 ochem.addReaction(alcohol, alkeen, E, 88, 'E1 of E2, evenwicht van p. 46', 'zuur', 'water');
 ochem.addReaction(keton, alkeen, E, 88, 'zelfcondensatie, E1cb', 'base', '');
 
-ochem.addReaction(alkaan, halogenide, R, 91, 'radicalisering, soms met radicaalinitiator', '', '');
+ochem.addReaction(alkaan, halogenide, R, 91, '+X2, soms met radicaalinitiator (radicalaire substitutie)', '', '');
+ochem.addReaction(alkaan, halogenide, R, 94, '+HX, met radicaalinitiator (radicalaire additie)', '', '');
+ochem.addReaction(alkaan, alkeen, R, 95, 'radicalaire kraking', '', '');
