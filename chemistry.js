@@ -13,7 +13,7 @@ var chemie = function(){
   this.edges = [];
 };
 chemie.prototype.addReaction = function(reagentia, producten, type, page, environment, katalysator, evenwicht){
-  var text = [(environment ? 'env: '+environment : null), (katalysator ? ('kat: '+katalysator) : null), (evenwicht ? 'ev: ' + evenwicht : null)].filter(function(n){return n}).join(', ');
+  var text = [(environment ? environment : null), (katalysator ? ('kat: '+katalysator) : null), (evenwicht ? 'evenwicht (afhankelijkheid): ' + evenwicht : null)].filter(function(n){return n}).join(', ');
   this.edges.push({'data': {
     'source': reagentia.id,
     'target': producten.id,
