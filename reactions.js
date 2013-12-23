@@ -45,6 +45,8 @@ var oxim = ochem.addOClass('oxim','R=ONOH');
 var diazoniumzout = ochem.addOClass('diazoniumzout','Ar-N2');
 
 //Reactions
+ochem.addReaction(alkeen, alkaan, normal, 17, '+H2 en kat.','',''); 
+
 ochem.addReaction(alkeen, halogenide, Ae, 46, "HX",'zuur','');
 ochem.addReaction(alkeen, alcohol, Ae, 46, 'H2O evenwicht zie p88', 'zuur', 'water');
 ochem.addReaction(alkyn, halogenide, Ae, 46, 'HX, (onverzadigde halogenide)', 'zuur', '');
